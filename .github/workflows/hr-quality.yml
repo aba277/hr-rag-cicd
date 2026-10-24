@@ -1,0 +1,21 @@
+# Reviewed changes, staging evaluation and release approval.
+name: HR application delivery and evaluation                            # pipeline name
+on:                                                                     # trigger
+  pull_request:                                                         # on pull request
+  push:                                                                 # on push
+    branches: [main, 'feature/**', 'fix/**', 'test/**']                 # branch filter
+  workflow_dispatch:                                                    # manual run button
+permissions:                                                            # token rights
+  contents: read                                                        # read-only code
+concurrency:                                                            # one run at a time
+  group: hr-staging                                                     # queue name
+  cancel-in-progress: false                cancel-in-progress: false                ca
+jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj     jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj     jjjjjjjjjjjjjjjjjjjjjjjtiajjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj     jjjjjjjjjjjjjjjjjjb
+jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj     jjjjjjjjjjjjjjjjjjjjjjjjjjimage)
+    steps:                                                              # ste    steps:                                                              # ste    steps      steps:                                                              # ste    steps:   er    steps:                                                              # ste    step f    steps:                                                              # ste    sease ta    steps:                                                              # ste    steps:   n
+    steps:                                                              # ste    st   # version
+      - name: Install delivery helper dependencies                      # step title
+        run: python -m pip install -r ci/requirements.txt               # install packages
+      - name: Release version is new                                    # step title
+        run: python ci/check_version.py                                 # VERSION newer than last tag
+      - name: Prompt structure and relea      - name: Prompt structure and relea      - name: Prompt structure and relea      - name: Prompt structure and relea      - name: Prompt structure and relea      - name: Prompt structure and relea      - name: Prompt structure and relea      - name: Prompt structure and relea      - name: Prompt structure and relea      - name: Prompt structure and relea      - name: Prompt structure and relea      - name: Prompt structure and relea      - name: Prompt structure and relea      - name: Prompt structure and relea   oc      - name: Prompt structure and relea      - name: Prompt structure and relea      - name:         - name: Prompt structure and relea      - name: Prompt structure and relea                     # build UI
