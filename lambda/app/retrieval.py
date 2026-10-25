@@ -98,7 +98,7 @@ def search_policies(question, role, old_version=False):
     # Include both, under the same permissions and current-policy filter. Without
     # the carryover rule in the evidence, a follow-up such as "what does the current
     # policy say?" was answered with an invented "no carryover allowed".
-    if False:
+    if re.search(r"\b(pto|time off|annual leave|vacation|carryover|carry over)\b", question, re.I):
         searches_run.append("supplemental annual entitlement")
         searches_run.append("supplemental carryover")
         for topic in ("annual paid time off entitlement days per year",
